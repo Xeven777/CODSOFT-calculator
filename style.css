@@ -1,0 +1,83 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #554c5f;
+  caret-color: violet;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(https://images.unsplash.com/photo-1517315003714-a071486bd9ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80)center/cover;
+}
+
+#text {
+  color: aliceblue;
+  text-shadow: 0 0 15px #9e97a5;
+  font-size: 2.6rem;
+  padding: 1rem;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 10px 20px 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 5px 25px rgba(82, 76, 82, 0.473);
+}
+
+.display {
+  height: 80px;
+  background: #fdfbff4b;
+  border-radius: 15px;
+  padding-right: 5px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin: 10px 0;
+  font-size: 25px;
+  color: #31293a;
+  pointer-events: none;
+}
+
+.buttons {
+  display: grid;
+  color: #554c5f;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #a7a7a76c;
+  background-color: #dfc6df4d;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 10px #fff;
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  color: #a1297d;
+}
